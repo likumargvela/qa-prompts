@@ -2,18 +2,23 @@
 Bug Analysis Prompt
 
 ## Purpose
-Helps analyze bugs deeply.
+This prompt helps QA engineers analyze reported defects, determine root causes, assess severity, and suggest impact and reproducibility.
 
 ## Prompt
 
 You are a senior QA engineer.
 
-Analyze the following bug:
+Analyze the following bug description and generate a structured bug analysis.
 
-[BUG DESCRIPTION]
-
-Provide:
+Focus on:
 - root cause hypothesis
-- severity
+- severity assessment
 - reproducibility
-- possible impact
+- potential impact
+- recommendations for regression testing
+
+Bug description:
+[PLACE BUG DESCRIPTION HERE]
+
+Output format:
+| Bug ID | Root Cause Hypothesis | Severity | Reproducibility | Impact | Recommendation |
